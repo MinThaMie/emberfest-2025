@@ -1,0 +1,47 @@
+:root {
+  color-scheme: light dark;
+
+  --golden-diatonic: calc(pow(calc((1 + sqrt(5)) / 2), 1 / 2));
+
+  --font-sans:
+    system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans',
+    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-serif:
+    'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+  --fs-sm: calc(round(var(--fs-md) * pow(var(--golden-diatonic), -1), 1px));
+  --fs-md: 42px;
+  --fs-lg: calc(round(var(--fs-md) * pow(var(--golden-diatonic), 1.5), 1px));
+  --fs-xl: calc(round(var(--fs-md) * pow(var(--golden-diatonic), 2), 1px));
+  --fs-2xl: calc(round(var(--fs-md) * pow(var(--golden-diatonic), 3), 1px));
+  --fs-3xl: calc(round(var(--fs-md) * pow(var(--golden-diatonic), 4), 1px));
+  --fs-4xl: calc(round(var(--fs-md) * pow(var(--golden-diatonic), 5), 1px));
+  --fs-5xl: calc(round(var(--fs-md) * pow(var(--golden-diatonic), 6), 1px));
+
+  --lh-xs: 1.1;
+  --lh-md: 1.5;
+
+  --fg: light-dark(oklch(14.5% 0 0), oklch(98.5% 0 0));
+  --fg-muted: light-dark(oklch(55.6% 0 0), oklch(70.8% 0 0));
+
+  --bg: light-dark(oklch(98.5% 0 0), oklch(14.5% 0 0));
+  --bg-muted: light-dark(oklch(92.2% 0 0), oklch(26.9% 0 0));
+
+  --link: light-dark(#3c42d0, #5d63f0);
+  --link-over: light-dark(#545df0, #797ef9);
+}
+
+@media print {
+  :root {
+    --fg: #000;
+    --fg-muted: oklch(55.6% 0 0);
+
+    --bg: #fff;
+    --bg-muted: oklch(92.2% 0 0);
+
+    --link: #000;
+    --link-over: #000;
+  }
+}

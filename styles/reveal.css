@@ -1,0 +1,10 @@
+.reveal .controls {
+  color: var(--fg-muted);
+  opacity: 0.5;
+}
+
+.reveal .progress {
+  height: 4px;
+  background: transparent;
+  color: rgb(from var(--fg-muted) r g b / 0.25);
+}
