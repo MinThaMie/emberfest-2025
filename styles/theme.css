@@ -4,6 +4,7 @@
   layer(hljs) (prefers-color-scheme: light);
 @import './config.css' layer(default);
 @import './reveal.css';
+@import './ember-styleguide.css';
 
 html,
 body,
@@ -11,8 +12,8 @@ body,
   font-family: var(--font-sans);
   font-size: var(--fs-md);
   line-height: var(--lh-md);
-  color: var(--fg);
-  background: var(--bg);
+  color:var(--color-gray-700);
+  background: var(--color-gray-100);
 }
 
 * {
@@ -34,7 +35,6 @@ p {
 /* Headlines */
 
 :is(h1, h2, h3, h4, h5, h6) {
-  font-weight: 700;
   line-height: var(--lh-xs);
 }
 
@@ -187,26 +187,6 @@ code {
   text-align: left;
   margin-inline: 0;
   max-width: unset;
-}
-
-/* Blockquotes */
-
-blockquote {
-  margin-inline: auto;
-  font-size: var(--fs-2xl);
-  line-height: var(--lh-xs);
-  text-wrap: pretty;
-  font-weight: 400;
-  font-family: var(--font-serif);
-  font-style: italic;
-}
-
-:has(blockquote:only-of-type + * > em:only-child) > blockquote + * {
-  color: var(--fg-muted);
-}
-
-:has(blockquote:only-of-type + * > em:only-child) > blockquote + *:before {
-  content: '— ';
 }
 
 /* Media */
