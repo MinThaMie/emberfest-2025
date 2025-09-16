@@ -33,7 +33,7 @@
   /* transform: scale(0.7); */
 }
 .fragment.scale-and-color.visible {
-  opacity: 0.7;
+  opacity: 0.5;
 }
 
 .fragment.scale-and-color.current-fragment {
@@ -676,6 +676,7 @@ blockquote.null-vox {
 
 blockquote p {
   font-size: 72px;
+  line-height: 1.2;
 }
 
 img {
